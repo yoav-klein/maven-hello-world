@@ -15,13 +15,11 @@ jobs:
         java-version: 1.8
     - name: Build with Maven
       run: mvn -B package --file my-app/pom.xml
-    - name: mkdir
-      run: mkdir -p path/to/artifact
     - name: upload
       uses: actions/upload-artifact@master
       with: 
         name: my-artifact
-        path: path/to/artifact
+        path: my-app/target
      
            
            
