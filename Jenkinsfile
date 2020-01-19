@@ -4,7 +4,7 @@ pipeline {
         stage('build') {
             steps {
             	
-            	sh 'mvn package -f my-app/pom.xml'
+            	sh 'tree'
             }
         }
     }
