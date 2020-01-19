@@ -4,6 +4,7 @@ pipeline {
         stage('build') {
             steps {
             	sh 'cd my-app'
+            	sh 'pwd'
             	sh 'mvn package'
             }
         }
