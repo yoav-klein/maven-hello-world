@@ -3,10 +3,8 @@ pipeline {
     stages {
         stage('build') {
             steps {
-            	sh 'pwd'
-            	sh 'cd my-app'
-            	sh 'pwd'
-            	sh 'mvn package'
+            	
+            	sh 'mvn package -f my-app/pom.xml'
             }
         }
     }
